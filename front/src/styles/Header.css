@@ -1,0 +1,85 @@
+.navbar {
+  background-color: white !important;
+  font-family: "sofia-pro";
+  position: sticky;
+  position: -webkit-sticky;
+  z-index: 1;
+  top: 0;
+}
+
+.navbar .container {
+  gap: 1rem;
+}
+
+.navbar-collapse {
+  margin-bottom: 16px;
+}
+
+.navbar-brand {
+  margin-right: 0;
+  font-size: 1.68rem;
+  font-family: "sofia-pro-med";
+}
+
+.brand-nav {
+  flex-grow: 1;
+  display: block;
+}
+
+.navbar-nav .nav-link {
+  padding-right: 0.3rem;
+  padding-left: 0.3rem;
+  font-size: 0.75rem;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #2d2d2d !important;
+}
+
+.right-nav {
+  flex-direction: row;
+  gap: 5px;
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    padding: 0.2rem;
+  }
+
+  .navbar-expand-lg .navbar-collapse {
+    flex-grow: 0;
+  }
+
+  .brand-nav {
+    height: inherit;
+    flex-grow: 1;
+    display: block;
+    text-align: center;
+    align-items: center;
+  }
+
+  .navbar-collapse {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .right-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 1px solid hsla(0, 0%, 83%, 0.486);
+    gap: 0;
+    text-align: center;
+    background-color: white;
+  }
+  .right-nav .nav-link {
+    padding: 1rem;
+    border-right: 1px solid hsla(0, 0%, 83%, 0.486);
+  }
+}

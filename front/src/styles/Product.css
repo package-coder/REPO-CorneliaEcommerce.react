@@ -1,0 +1,73 @@
+.card {
+  border: none;
+  border-radius: 0;
+  font-family: "sofia-pro";
+}
+
+.card-header {
+  position: absolute;
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+  top: 10px;
+  left: -3px;
+  right: 0;
+  padding: 0;
+}
+
+.card .labels {
+  font-size: 0.65rem;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.card-header .label {
+  list-style-type: none;
+  padding: 0;
+  display: inline;
+  padding: 1px 6.5px;
+}
+
+.card .card-footer {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.card .card-body {
+  font-size: 0.9rem;
+  margin-bottom: 2px;
+}
+
+.card .card-img-div {
+  width: 250px;
+  height: 300px;
+  background-color: lightgrey;
+}
+
+.card .product-price {
+  font-size: 1.05rem;
+  font-family: "sofia-pro-med";
+}
+
+.card .secondary-price {
+  font-size: 0.65rem;
+  color: gray;
+}
+
+.card .bi {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .card .card-body .card-text {
+    display: none;
+  }
+
+  .card-footer {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+}

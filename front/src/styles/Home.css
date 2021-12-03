@@ -1,0 +1,44 @@
+.carousel-item img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.main {
+  background-color: white;
+  height: 200vh;
+}
+
+.carousel {
+  background-color: lightgrey;
+  height: 80vh;
+  width: 100%;
+}
+
+.nav-cards .col {
+  height: 270px;
+  background-color: lightgrey;
+  flex: none;
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .nav-cards .col {
+    height: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-cards .col {
+    flex: 1 0;
+  }
+}
+
+@media (min-width: 1201px) {
+  .nav-cards .row {
+    max-width: 1200px;
+  }
+}

@@ -1,0 +1,92 @@
+.pushcanvas {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 200;
+  transition: 0.5s;
+  width: 0;
+  overflow-x: hidden;
+}
+
+.pushcanvas-btn {
+  position: fixed;
+  background-color: #111;
+  top: 40%;
+  outline: none;
+  border: none;
+  margin: 0;
+  cursor: pointer;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  padding: 0.3rem 0.8rem;
+  z-index: -1;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.pushcanvas-btn i {
+  font-size: 1.2rem;
+}
+
+.pushcanvas-closeicon {
+  cursor: pointer;
+}
+
+.pushcanvas-body {
+  background-color: #111;
+  color: white;
+  font-family: "sofia-pro-med";
+  font-size: 0.75rem;
+}
+
+.pushcanvas-body section {
+  height: 300vh;
+}
+
+.pushcanvas.show {
+  width: 400px;
+}
+
+.pushcanvas-content {
+  transition: margin-left 0.5s;
+}
+
+.pushcanvas-content.show {
+  margin-left: 400px;
+}
+
+.pushcanvas-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  display: none;
+  transition: opacity 0.15s linear;
+  opacity: 0.2;
+}
+
+@media (max-width: 576px) {
+  .pushcanvas-btn {
+    padding: 0.2rem 0.6rem;
+  }
+  .pushcanvas-btn i {
+    font-size: 0.75rem;
+  }
+  .pushcanvas.show {
+    width: 70%;
+  }
+
+  .pushcanvas-header {
+    padding: 1rem !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .pushcanvas-content.show {
+    margin-left: 0;
+  }
+}
