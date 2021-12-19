@@ -5,7 +5,7 @@ import '../styles/Product.css'
 export default function Product(){
 
     return (
-        <Card className="d-inline-block">
+        <Card>
             <Card.Header>
                 <Row>
                     <Col className="d-flex align-items-center">
@@ -19,20 +19,18 @@ export default function Product(){
                         </ul>
                     </Col>
 
-                    <Col className="mx-auto text-end">
+                    <Col className="d-none-xs mx-auto text-end">
                         <i className="bi bi-heart-fill mx-3" style={{ color: 'darkgray' }}></i>
                     </Col>
                 </Row>
             </Card.Header>
             <Card.Body className="p-0">
-                <div className="card-img-div"></div>
-
-                <Card.Text>
+            </Card.Body>
+           <Card.Footer className="p-0">
+                <Card.Text className="card-name mb-1">
                     Product Name
                 </Card.Text>
 
-            </Card.Body>
-           <Card.Footer className="p-0">
                 <Card.Title className="m-0 product-price">$$$</Card.Title>
                 <Card.Text className="secondary-price">$$$</Card.Text>
            </Card.Footer>

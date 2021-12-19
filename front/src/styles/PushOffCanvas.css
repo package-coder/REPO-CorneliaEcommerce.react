@@ -11,7 +11,7 @@
 
 .pushcanvas-btn {
   position: fixed;
-  background-color: #111;
+  background-color: var(--color-dark);
   top: 40%;
   outline: none;
   border: none;
@@ -31,17 +31,21 @@
 
 .pushcanvas-closeicon {
   cursor: pointer;
-}
-
-.pushcanvas-body {
-  background-color: #111;
-  color: white;
-  font-family: "sofia-pro-med";
   font-size: 0.75rem;
 }
 
+.pushcanvas-body {
+  background-color: var(--color-dark);
+  color: white;
+  font-family: 'Alfa Slab One', cursive;
+  font-weight: bold;
+  font-style: italic;
+}
+
+
 .pushcanvas-body section {
   height: 300vh;
+  
 }
 
 .pushcanvas.show {
@@ -59,10 +63,10 @@
 .pushcanvas-backdrop {
   position: fixed;
   top: 0;
+  bottom: 0;
+  right: 0;
   left: 0;
   z-index: -1;
-  width: 100vw;
-  height: 100vh;
   background-color: #000;
   display: none;
   transition: opacity 0.15s linear;
@@ -81,7 +85,7 @@
   }
 
   .pushcanvas-header {
-    padding: 1rem !important;
+    padding: 0.3rem !important;
   }
 }
 

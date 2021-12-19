@@ -3,21 +3,96 @@
   object-position: center;
 }
 
-.main {
-  background-color: white;
-  height: 200vh;
-}
+
+main > .container .header{
+  display: block;
+} 
 
 .carousel {
   background-color: lightgrey;
-  height: 80vh;
-  width: 100%;
+  height: 100vh;
+  position: relative;
 }
 
-.nav-cards .col {
-  height: 270px;
+.carousel-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-family: 'Alfa Slab One', cursive;
+  padding: 3rem 5rem;
+}
+
+.categories{
+  height: 100vh;
+  background: rgb(36, 36, 36);
+  max-height: auto;
+  position: relative;
+}
+
+.categories > .row{
+  width: 100%;
+  height: auto;
+  z-index: 10;
+}
+
+.category{
+  height: 55vh;
   background-color: lightgrey;
   flex: none;
+}
+
+
+.categories > .background{
+  color: white;
+  position: absolute;
+  font-family: 'Alfa Slab One', cursive;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+}
+
+
+
+.products{
+  font-family: 'Alfa Slab One', cursive;
+  color: var(--color-dark);
+  height: 100vh;
+}
+
+
+.products .title{
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.75rem;
+}
+
+.products .subheader{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+}
+
+.products > .row{
+  height: auto;
+}
+
+.products > .row > .col{
+  flex: 1 0 25%;
+}
+
+
+.banner{
+  height: 100vh;
+  background: gray;
+}
+
+.newsletter{
+  background: black;
 }
 
 @media (max-width: 768px) {
@@ -26,19 +101,56 @@
     width: 100%;
   }
 
-  .nav-cards .col {
-    height: 200px;
+  .categories{
+    height: auto;
+  }
+
+  .products{
+    height: auto;
+  }
+
+  .products .labels{
+    font-size: 0.5rem;
+  }
+
+  .products .product-price {
+    font-size: 0.9rem;
+  }
+  
+  .products .secondary-price {
+    font-size: 0.55rem;
+  }
+
+  .products > .row > .col{
+    flex: 1 0 100%;
   }
 }
+
+
 
 @media (min-width: 768px) {
-  .nav-cards .col {
+
+  .category {
     flex: 1 0;
+  }
+
+  .products > .row > .col{
+    flex: 1 0 40%;
+  }
+  
+  .products .title{
+    font-size: 2.3rem;
   }
 }
 
-@media (min-width: 1201px) {
-  .nav-cards .row {
-    max-width: 1200px;
+@media (min-width: 991px) {
+
+  .products > .row{
+    overflow: hidden;
   }
+
+  .products > .row > .col{
+    flex: 1 0 20%;
+  }
+  
 }

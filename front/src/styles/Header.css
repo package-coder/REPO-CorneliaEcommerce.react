@@ -1,70 +1,46 @@
 .navbar {
   background-color: white !important;
-  font-family: "sofia-pro";
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
   position: sticky;
   position: -webkit-sticky;
-  z-index: 1;
+  z-index: 100;
   top: 0;
+  color: #2d2d2d !important;
+
 }
 
-.navbar .container {
-  gap: 1rem;
-}
-
-.navbar-collapse {
-  margin-bottom: 16px;
-}
 
 .navbar-brand {
-  margin-right: 0;
-  font-size: 1.68rem;
-  font-family: "sofia-pro-med";
+  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-right: 1rem;
 }
 
-.brand-nav {
-  flex-grow: 1;
-  display: block;
-}
 
 .navbar-nav .nav-link {
   padding-right: 0.3rem;
   padding-left: 0.3rem;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
 }
 
-.navbar-brand,
-.navbar-nav .nav-link {
-  color: #2d2d2d !important;
+.right-nav .nav-link{
+  font-size: 0.85rem;
 }
 
-.right-nav {
-  flex-direction: row;
-  gap: 5px;
+.right-nav .bi-person{
+  font-size: 1.15rem ;
 }
 
-@media (min-width: 992px) {
-  .navbar {
-    padding: 0.2rem;
-  }
-
-  .navbar-expand-lg .navbar-collapse {
-    flex-grow: 0;
-  }
-
-  .brand-nav {
-    height: inherit;
-    flex-grow: 1;
-    display: block;
-    text-align: center;
-    align-items: center;
-  }
-
-  .navbar-collapse {
-    margin-bottom: 0;
-  }
+.right-nav .bi-bag{
+  font-size: 0.95rem ;
 }
 
-@media (max-width: 576px) {
+
+
+
+@media (max-width: 992px) {
+  
   .right-nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

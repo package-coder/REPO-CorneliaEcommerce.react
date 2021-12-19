@@ -26,15 +26,15 @@ export default function PushOffCanvas({ children }){
     return (
         <div className="pushcanvas">
             <button className="pushcanvas-btn" onClick={toggleCanvas}>
-                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star-fill font-medium"></i>
             </button>
             <div className="pushcanvas-backdrop" onClick={toggleCanvas}></div>
-            <div className="pushcanvas-body">
+            <div className="pushcanvas-body p-4">
                 <header className="pushcanvas-header p-2">
                     <Container>
                         <Row>
                             <Col>
-                                <h6>POPULAR</h6>
+                                <h5>POPULAR</h5>
                             </Col>
                             <Col className="text-end">
                                 <span className="bi bi-x-lg pushcanvas-closeicon"  onClick={toggleCanvas}></span>
