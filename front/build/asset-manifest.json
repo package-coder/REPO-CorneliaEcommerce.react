@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/cornelia-ecom/static/css/main.41cf4948.chunk.css",
+    "main.js": "/cornelia-ecom/static/js/main.21cfd25f.chunk.js",
+    "main.js.map": "/cornelia-ecom/static/js/main.21cfd25f.chunk.js.map",
+    "runtime-main.js": "/cornelia-ecom/static/js/runtime-main.346234eb.js",
+    "runtime-main.js.map": "/cornelia-ecom/static/js/runtime-main.346234eb.js.map",
+    "static/css/2.383c0125.chunk.css": "/cornelia-ecom/static/css/2.383c0125.chunk.css",
+    "static/js/2.2af76839.chunk.js": "/cornelia-ecom/static/js/2.2af76839.chunk.js",
+    "static/js/2.2af76839.chunk.js.map": "/cornelia-ecom/static/js/2.2af76839.chunk.js.map",
+    "static/js/3.187ef57e.chunk.js": "/cornelia-ecom/static/js/3.187ef57e.chunk.js",
+    "static/js/3.187ef57e.chunk.js.map": "/cornelia-ecom/static/js/3.187ef57e.chunk.js.map",
+    "index.html": "/cornelia-ecom/index.html",
+    "static/css/2.383c0125.chunk.css.map": "/cornelia-ecom/static/css/2.383c0125.chunk.css.map",
+    "static/css/main.41cf4948.chunk.css.map": "/cornelia-ecom/static/css/main.41cf4948.chunk.css.map",
+    "static/js/2.2af76839.chunk.js.LICENSE.txt": "/cornelia-ecom/static/js/2.2af76839.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/cornelia-ecom/static/media/Sofia Pro Medium.5b20abb3.otf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.346234eb.js",
+    "static/css/2.383c0125.chunk.css",
+    "static/js/2.2af76839.chunk.js",
+    "static/css/main.41cf4948.chunk.css",
+    "static/js/main.21cfd25f.chunk.js"
+  ]
+}
