@@ -34,9 +34,9 @@ export default function Header({ children }){
                         <Navbar.Toggle aria-controls="aria-navbar-nav"> <span className="bi bi-filter-right" ></span></Navbar.Toggle>
                     </Nav>
                     <Nav className="right-nav d-lg-flex align-items-center">
-                        <Nav.Link className="bi bi-search"></Nav.Link>
-                        <Nav.Link className="bi bi-person"></Nav.Link>
-                        <Nav.Link className="bi bi-bag"></Nav.Link>
+                        <Nav.Link className="">SEARCH</Nav.Link>
+                        <Nav.Link className="">LOGIN</Nav.Link>
+                        <Nav.Link className="">CART</Nav.Link>
                     </Nav>
                 </Container>
                 
